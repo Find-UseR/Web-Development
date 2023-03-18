@@ -1,0 +1,53 @@
+body{
+ background-image: url("nv3.jpg");
+ height:  100vh;
+ background-size: cover;
+}
+   
+   .menu{
+   width:80%;
+   height:100px;
+   margin:0px auto;
+   
+   }
+   
+   .menu ul{
+    padding:5px;
+   }
+   
+   .menu ul li{
+    float:left;
+    background-color:rgb(19, 20, 20);
+    color:white;
+    width:200px;
+    height:50px;
+    line-height:50px;
+    font-size:25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align:center;
+    list-style:none;
+    opacity:0.9;
+   }
+   
+   .menu ul li ul{
+    display:none;
+   }
+   
+   .menu ul li:hover > ul{
+    display:block;
+   }
+   
+   .menu ul li:hover{
+    background-color:#33ff00;
+    opacity:0.9;
+   }
+   
+   .menu ul li ul li{
+    position:relative;
+   }
+   
+   .menu ul li ul li ul{
+    position:absolute;
+    left:200px;
+    top:0px;
+   }
