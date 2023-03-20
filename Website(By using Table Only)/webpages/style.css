@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+}
+
+table {
+    background-color: white;
+    width: 100%;
+    border-collapse: collapse;
+}
+td {
+    padding: 20px;
+    vertical-align: top;
+    border: 1px solid #ccc;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.navbar {
+    background-color: #333;
+    color: #333;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+.navbar a {
+    
+    font-size: x-large;
+    color: #fff;
+    text-decoration: none;
+    padding: 40px 120px 80px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    line-height: 10px;
+}
