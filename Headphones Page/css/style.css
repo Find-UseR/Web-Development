@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #37a0bb;
+    position: relative;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+nav img{
+    width: 120px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 45%;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #D8EBF4;
+    font-size: 20px;
+    text-transform: capitalize;
+    transition: .3s ease-in;
+}
+nav ul li a:hover{
+    transform: scale(1.2);
+}
+.cart{
+   color: #D8EBF4;
+   font-size: 30px;
+   cursor: pointer;
+   transition: .3s;
+}
+.cart:hover{
+    transform: translate(10px);
+}
+section{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+section .description{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    row-gap:40px;
+}
+section .description h2{
+    font-size: 6em;
+    font-weight: 500;
+    color: #000000;
+    text-transform: capitalize;
+}
+section .description p{
+    font-size: 25px;
+    color: #D8EBF4;
+    line-height: 35px;
+}
+section .description a{
+    display: block;
+    text-decoration: none;
+    border: 1px solid #D8EBF4;
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+    font-size: 28px;
+    color: #D8EBF4;
+    text-transform: capitalize;
+    border-radius: 8px;
+    transition: .3s;
+}
+section .description a:hover{
+    background-color: #D8EBF4;
+    color: #2C86A2;
+    transform: translateY(-5px);
+}
+.icon{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+}
+.icon img{
+    width: 60px;
+    cursor: pointer;
+    transition: .3s;
+}
+.icon img:hover{
+    transform: translateY(-20px);
+}
