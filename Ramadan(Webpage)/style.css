@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.contanier{
+    height: 100vh;
+    width: 85%;
+    margin: auto;
+    position: relative;
+}
+.contanier nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    font-size: 40px;
+    color: #187acf;
+    font-weight: bold;
+}
+nav .nav-links a{
+    color: #187acf;
+    background-color: aliceblue;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 25px;
+    text-transform: capitalize;
+}
+nav .nav-links a:hover,
+nav .nav-links a.active{
+    background-color: #187acf;
+    color: #fff;
+}
+.contanier .hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contanier .hero .div-text{
+    width: 50%;
+}
+.hero .div-text h1{
+    color: #187acf;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.hero .div-text p{
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 60px;
+    line-height: 1.6;
+}
+.hero .div-text .btn{
+    padding: 15px 25px;
+    background-color: #187acf;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 25px;
+    border: 1px solid #187acf;
+}
+.hero .div-text .btn:hover{
+    background-color: transparent;
+    color: #187acf;
+}
+.div-img img{
+    width: 500px;
+}
