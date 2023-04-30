@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- link file css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contanier">
+        <div class="side-bar">
+            <i class="fa-solid fa-bars menu"></i>
+
+            <div class="social-link">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="big-box">
+            <nav>
+                <img class="logo" src="img/Logo.png" alt="">
+                <div class="nav-links">
+                    <a href="#">iPhone</a>
+                    <a href="#">iPad</a>
+                    <a class="active" href="#">iWatch</a>
+                    <a href="#">Support</a>
+                </div>
+            </nav>
+
+            <div class="content">
+                <div class="div-text">
+                    <h1>The Perfect Moment</h1>
+                    <h3>Between Past and Future</h3>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+
+                <div class="div-img">
+                    <img id="big-img" src="img/img1.png" alt="">
+                </div>
+
+                <div class="div-color">
+                    <span onclick="watches('img/img2.png')"></span>
+                    <span onclick="watches('img/img1.png')"></span>
+                    <span onclick="watches('img/img3.png')"></span>
+                </div>
+            </div>
+
+            <div class="small-img">
+                <img onclick="watches(this.src)" src="img/img1.png" alt="">
+                <img onclick="watches(this.src)" src="img/img2.png" alt="">
+                <img onclick="watches(this.src)" src="img/img3.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let bigImage = document.getElementById('big-img');
+
+        function watches(watch){
+            bigImage.src = watch
+        }
+    </script>
+</body>
+</html>
